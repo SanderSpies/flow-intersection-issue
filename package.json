@@ -1,0 +1,17 @@
+{
+  "name": "flow-example",
+  "version": "0.0.1",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sander Spies",
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "flow-bin": "0.27.0",
+    "flow-interfaces": "^0.6.1",
+    "iflow-immutable": "^1.0.32",
+    "iflow-moment": "^1.1.13"
+  }
+}

@@ -1,0 +1,27 @@
+[ignore]
+.*/node_modules/.*
+
+[include]
+./node_modules/
+
+[libs]
+./node_modules/iflow-immutable/index.js.flow
+./node_modules/iflow-moment/index.js.flow
+./node_modules/flow-interfaces/interfaces/CSSModule.d.js
+./node_modules/flow-interfaces/interfaces/react-addons-css-transition-group.d.js
+./interfaces
+
+[options]
+module.system=haste
+suppress_type=$FlowIssue
+suppress_type=$FlowFixMe
+suppress_type=$FixMe
+
+module.name_mapper='.*\.\(scss\|css\)$' -> 'CSSModule'
+module.name_mapper='.*\.\(jpg\|jpeg\|gif\|svg\|png\)$' -> 'Image'
+
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
+esproposal.decorators=ignore
+
+munge_underscores=true
